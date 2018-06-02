@@ -23,11 +23,8 @@ public class RatingController {
 @Autowired
 private RatingService ratingService;
 @GetMapping
-public List<Rating> findRatingsByBookId(
-@RequestParam(required = false, defaultValue = "
-0") Long bookId) {
-if (bookId.equals(
-0L)) {
+public List<Rating> findRatingsByBookId(@RequestParam(required = false, defaultValue = "0") Long bookId) {
+if (bookId.equals(0L)) {
 return ratingService.findAllRatings();
 }
 return ratingService.findRatingsByBookId(bookId);
