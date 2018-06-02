@@ -24,28 +24,28 @@ public class BookController {
     private BookService bookService;
     @GetMapping
     public List<Book> findAllBooks() {
-return bookService.findAllBooks();
+        return bookService.findAllBooks();
     }
     @GetMapping("/{bookId}")
     public Book findBook(@PathVariable Long bookId) {
-return bookService.findBookById(bookId);
+        return bookService.findBookById(bookId);
     }
     @PostMapping
     public Book createBook(@RequestBody Book book) {
-return bookService.createBook(book);
+        return bookService.createBook(book);
     }
     @DeleteMapping("/{bookId}")
     public void deleteBook(@PathVariable Long bookId) {
-bookService.deleteBook(bookId);
+        bookService.deleteBook(bookId);
     }
     @PutMapping("/{bookId}") 
     public Book updateBook(@RequestBody Book book, @PathVariable Long bookId) { 
-return bookService.updateBook(book, bookId); 
+        return bookService.updateBook(book, bookId); 
     }
     @PatchMapping("/{bookId}")
     public Book updateBook(
-@RequestBody Map<String, String> updates, 
-@PathVariable Long bookId) {
-return bookService.updateBook(updates, bookId);
+        @RequestBody Map<String, String> updates, 
+        @PathVariable Long bookId) {
+            return bookService.updateBook(updates, bookId);
     }
 }
