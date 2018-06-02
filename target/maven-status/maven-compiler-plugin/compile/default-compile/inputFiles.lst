@@ -1,0 +1,9 @@
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/bookapi/Security/SecurityConfig.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/ratingapi/Entities/Rating.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/ratingapi/RatingapiApplication.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/bookapi/Entities/Book.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/ratingapi/Services/RatingService.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/bookapi/BookapiApplication.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/bookapi/Controllers/BookController.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/ratingapi/Controllers/RatingController.java
+/home/robin/dev/java/BookAPI/src/main/java/com/microservices/bookapi/Services/BookService.java

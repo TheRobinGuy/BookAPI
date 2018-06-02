@@ -1,6 +1,7 @@
 package com.microservices.ratingapi.Controllers;
 
 import java.util.List;
+import java.util.Map;
 
 import com.microservices.ratingapi.Entities.Rating;
 import com.microservices.ratingapi.Services.RatingService;
@@ -40,8 +41,7 @@ public void deleteRating(@PathVariable Long ratingId) {
 ratingService.deleteRating(ratingId);
 }
 @PutMapping("/{ratingId}") 
-public Rating updateRating(@RequestBody Rating rating, @PathVar
-iable Long ratingId) { 
+public Rating updateRating(@RequestBody Rating rating, @PathVariable Long ratingId) { 
 return ratingService.updateRating(rating, ratingId); 
 }
 @PatchMapping("/{ratingId}")
